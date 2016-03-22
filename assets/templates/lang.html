@@ -1,0 +1,10 @@
+<div class="center">
+    <img data-ng-src="{{ logoUrl }}" alt="" height="110">
+    <h1>You have selected {{ lang }}</h1>
+    <h4>Select one of the following {{ type }} to view</h4>
+    <div class="container-fluid">
+        <ul class="nav nav-pills nav-stacked col-lg-offset-4 col-lg-4">
+            <li role="presentation" data-ng-repeat="proto in sideNav[lang] | orderBy: '-date'" data-ng-if="mc.pastNow(proto.date)"><a href="#{{ proto.title }}">{{ proto.title }} <br>Released: {{ proto.date | date:'MM/dd/yyyy'}}</a></li>
+        </ul>
+    </div>
+</div>

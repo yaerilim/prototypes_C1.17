@@ -1,0 +1,7 @@
+<div class="center">
+    <h3>Welcome to the prototype instruction page</h3>
+    <p>Most recent prototype is at the top of below list</p>
+    <ul class="clean-list">
+        <li data-ng-repeat="proto in mc.protoList | orderBy: '-date'" data-ng-if="mc.pastNow(proto.date)"><a href="#{{ proto.title }}">{{ proto.title }}</a></li>
+    </ul>
+</div>
