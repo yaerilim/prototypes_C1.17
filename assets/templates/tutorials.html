@@ -1,0 +1,13 @@
+<div class="panel panel-tutorial">
+    <div class="panel-heading">
+        <h2>Tutorial: <i>{{ fs.title }}</i></h2>
+    </div>
+    <div class="panel-body tutorial-body">
+
+        <div class="code-body" data-ng-repeat="(key, val) in fs.topics">
+            <h3>{{key}}</h3>
+            <div data-ng-bind-html="mc.trustHtml(val.html)"></div>
+        </div>
+
+    </div>
+</div>
