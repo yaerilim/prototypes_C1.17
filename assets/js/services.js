@@ -9,10 +9,7 @@ app.provider('navigation', function(){
         }
         var now = Date.now();
 
-        if (now > time) {
-            return true;
-        }
-        return false;
+        return now > time;
     };
 
     this.$get = function($location, $sce){
