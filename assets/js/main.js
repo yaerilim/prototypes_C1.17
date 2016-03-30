@@ -38,13 +38,13 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'HTML-Fundamentals-3',
-                date: toTs('3/28/2016 09:00'),
+                date: toTs('3/28/2016 16:02'),
                 controller: 'htmlFund3Controller',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'HTML-Fundamentals-2',
-                date: toTs('3/28/2016 16:00'),
+                date: toTs('3/28/2016 16:01'),
                 controller: 'htmlFund2Controller',
                 template: 'featureSetsB.html'
             },
@@ -286,7 +286,7 @@ app.config(function($routeProvider, navigationProvider){
         Example: [
             {
                 title: 'Example-1',
-                date: toTs('3/28/2016 16:00'),
+                date: toTs('3/28/2016 15:59'),
                 controller: 'exampleController',
                 template: 'featureSetsA.html'
             }
