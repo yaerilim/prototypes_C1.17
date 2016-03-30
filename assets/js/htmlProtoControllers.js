@@ -111,7 +111,7 @@ app.controller('htmlFund2Controller', function() {
         'Video Prototype Demo': {
             title: "HTML Fundamentals 2",
             link: "https://www.youtube.com/watch?v=hfAS9RlCspE",
-            live: true
+            live: false
         }
     };
 
@@ -155,7 +155,7 @@ app.controller('htmlFund3Controller', function(){
         'Video Prototype Demo': {
             title: "HTML Fundamentals 3",
             link: "https://www.youtube.com/watch?v=ifTfN_ZTsUk",
-            live: true
+            live: false
         }
     };
 
@@ -200,7 +200,7 @@ app.controller('htmlFund4Controller', function(){
         'Video Prototype Demo': {
             title: "HTML Fundamentals 4",
             link: "https://www.youtube.com/watch?v=MimG2I4M3gY",
-            live: true
+            live: false
         }
     };
 
@@ -253,7 +253,7 @@ app.controller('htmlFund5Controller', function() {
         'Video Prototype Demo': {
             title: "HTML Fundamentals 5",
             link: "https://www.youtube.com/watch?v=y4N9L0h3VvI",
-            live: true
+            live: false
         }
     };
 
@@ -301,7 +301,7 @@ app.controller('htmlFormsController', function() {
         'Video Prototype Demo': {
             title: "HTML Forms",
             link: "https://www.youtube.com/watch?v=KGATmFo4UqQ",
-            live: true
+            live: false
         }
     };
 
