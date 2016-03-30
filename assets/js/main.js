@@ -32,7 +32,7 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'HTML-Fundamentals-4',
-                date: toTs('3/30/2019 10:00'),
+                date: toTs('3/30/2016 10:00'),
                 controller: 'htmlFund4Controller',
                 template: 'featureSetsB.html'
             },
