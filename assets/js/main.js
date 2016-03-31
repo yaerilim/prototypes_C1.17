@@ -26,7 +26,7 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'HTML-Fundamentals-5',
-                date: toTs('1/5/2018 15:00'),
+                date: toTs('3/31/2016 08:00'),
                 controller: 'htmlFund5Controller',
                 template: 'featureSetsB.html'
             },
