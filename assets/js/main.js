@@ -14,13 +14,13 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'HTML-Responsive-Design',
-                date: toTs('1/13/2018 12:00'),
+                date: toTs('4/6/2016 08:00'),
                 controller: 'htmlResponsiveDesignController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'HTML-Forms',
-                date: toTs('1/13/2018 09:00'),
+                date: toTs('4/6/2016 08:00'),
                 controller: 'htmlFormsController',
                 template: 'featureSetsB.html'
             },
@@ -58,31 +58,31 @@ app.config(function($routeProvider, navigationProvider){
         CSS: [
             {
                 title: 'CSS-Bootstrap-Redux',
-                date: toTs('1/14/2018 16:00'),
+                date: toTs('4/8/2016 08:00'),
                 controller: 'cssBsReduxController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'CSS-Bootstrap-Grid',
-                date: toTs('1/14/2018 18:00'),
+                date: toTs('4/7/2016 08:00'),
                 controller: 'cssBsGridController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'CSS-Selectors',
-                date: toTs('1/12/2018 09:00'),
+                date: toTs('4/5/2016 08:00'),
                 controller: 'cssSelectorsController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'CSS-Design-Layout-2',
-                date: toTs('1/11/2018 12:00'),
+                date: toTs('4/4/2016 08:00'),
                 controller: 'cssLayout2Controller',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'CSS-Design-Layout-1',
-                date: toTs('1/11/2018 09:00'),
+                date: toTs('4/4/2016 08:00'),
                 controller: 'cssLayout1Controller',
                 template: 'featureSetsB.html'
             }
