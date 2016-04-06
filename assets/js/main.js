@@ -278,7 +278,7 @@ app.config(function($routeProvider, navigationProvider){
         Tutorials: [
             {
                 title: 'Tutorials-Dev-Tools-Mobile-View',
-                date: toTs('1/13/2018 12:01'),
+                date: toTs('4/4/2016 10:00'),
                 controller: 'dtMobileViewController',
                 template: 'tutorials.html'
             }
