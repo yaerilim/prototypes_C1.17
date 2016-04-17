@@ -96,13 +96,13 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'JS-Event-Delegation',
-                date: toTs('1/26/2018 13:00'),
+                date: toTs('4/19/2016 08:00'),
                 controller: 'jsEventDelegationController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'JS-Repeat-Blocks',
-                date: toTs('1/26/2018 11:00'),
+                date: toTs('4/19/2016 08:00'),
                 controller: 'jsLoopsController',
                 template: 'featureSetsB.html'
             },
