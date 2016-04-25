@@ -155,7 +155,7 @@ app.controller('jsDomEventsController', function() {
         'Video Prototype Demo': {
             title: "JS DOM Events",
             link: "https://www.youtube.com/watch?v=Jt2rYYsVA1M",
-            live: false
+            live: true
         }
     };
 
@@ -244,7 +244,7 @@ app.controller('jsJqueryController', function() {
         'Video Prototype Demo': {
             title: "JS jQuery",
             link: "https://www.youtube.com/watch?v=RAK_QyjwvZA",
-            live: false
+            live: true
         }
     };
 
@@ -284,7 +284,7 @@ app.controller('jsDomCreationController', function() {
         'Video Prototype Demo': {
             title: "JS DOM Creation",
             link: "https://www.youtube.com/watch?v=buE0GBtLwFQ",
-            live: false
+            live: true
         }
     };
 
@@ -326,7 +326,7 @@ app.controller('jsRefDataTypesController', function() {
         'Video Prototype Demo': {
             title: "JS Reference Data Types",
             link: "https://www.youtube.com/watch?v=Thl8bnbVqgs",
-            live: false
+            live: true
         }
     };
 
@@ -371,7 +371,7 @@ app.controller('jsLoopsController', function() {
         'Video Prototype Demo - Part 2': {
             title: "JS Repeat Blocks (Loops) - Part 2",
             link: "https://www.youtube.com/watch?v=Fa7Tib_HJ4Q",
-            live: false
+            live: true
         }
     };
 
