@@ -89,6 +89,12 @@ app.config(function($routeProvider, navigationProvider){
         ],
         JS: [
             {
+                title: 'JS-OOP',
+                date: toTs('4/28/2016 17:00'),
+                controller: 'jsOopController',
+                template: 'featureSetsB.html'
+            },
+            {
                 title: 'JS-AJAX',
                 date: toTs('2/08/2018 10:00'),
                 controller: 'jsAjaxController',
