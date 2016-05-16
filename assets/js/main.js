@@ -89,6 +89,12 @@ app.config(function($routeProvider, navigationProvider){
         ],
         JS: [
             {
+                title: 'JS-REGEX',
+                date: toTs('5/16/2016 11:00'),
+                controller: 'jsRegexController',
+                template: 'featureSetsB.html'
+            },
+            {
                 title: 'JS-OOP',
                 date: toTs('4/28/2016 17:00'),
                 controller: 'jsOopController',

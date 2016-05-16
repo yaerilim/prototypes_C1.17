@@ -527,3 +527,48 @@ app.controller('jsOopController', function() {
         }
     }
 });
+
+//js_regex
+app.controller('jsRegexController', function() {
+    this.title = ['JavaScript<br> <b class="lf-text">Reg</b>ular <b class="lf-text">Ex</b>pressions', 'js_ajax'];
+    this.description = "<p>Building from previous prototypes, this prototype will introduce you to <i>Regular Expressions</i></p><p>This prototype is based on the information that you obtained through the following resources <b>(If you haven't gone through these then please do so now).</b></p>";
+    this.branch = 'js_regex';
+    this.protoId = 45;
+
+    this.links = {
+        Presentation: {
+            'JS AJAX': 'https://docs.google.com/presentation/d/1xtn4cLXmWXx3caxrXgl418jLOQc8MC5-pY-r0TcjRVs/pub?start=false&loop=false&delayms=3000&slide=id.p'
+        },
+        'W3 School': {
+            'JS Regex': 'http://www.w3schools.com/jsref/jsref_obj_regexp.asp',
+            'JS String Regex Search': 'http://www.w3schools.com/jsref/jsref_match.asp'
+        },
+        'Other Resources': {
+            'Regex Cheat Sheet': 'https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/',
+            'Regex Tester': 'https://regex101.com/'
+        }
+    };
+
+    this.demo = {
+        'Video Prototype Demo': {
+            title: "JS AJAX",
+            link: "",
+            live: false
+        }
+    };
+
+    this.features = {
+        'Getting Stared': {
+            html: '<ol class="left-border"><li>In your <code>js_regex</code> folder create an <code>index.html</code> file</li><li>Within your <code>index.html</code>:<ol class="nested-1"><li>Create a basic html skeleton</li><li>Add a title tag in your head section with the vale of: <b>js_regex</b></li><li>Add <code>script</code> tags within your head section</li><li>All code for this prototype will be completed in the script tags</li><li>Within your body add a <code>h1</code> tag with the text: <b>JavaScript - Regular Expressions</b></li></ol></li></ol>'
+        },
+        'Feature Set 1 - Easing In': {
+            html: '<ol class="left-border"><li>Write a regular expression (regex) to find the letter <b>"e"</b> in the string <b>hello</b><ol class="nested-1"><li>Save the regex to a variable named: <code>fs1a</code></li></ol></li><li>Write a regex to find <b>ALL</b> the "e"s in the string <b>HE entEred</b>, regardless if it is capitalized or not<ol class="nested-1"><li>Save the regex to a variable named: <code>fs1b</code></li></ol></li><li>Write a single regex to find both "star" and "stir" in "stir the star", but not, for example "stat" or "stim"<ol class="nested-1"><li>Save the regex to a variable named: <code>fs1c</code></li></ol></li><li>Use the following strings to test your regex:<ol class="nested-1"><li>stir the star</li><li>stim the stat</li><li>stir the stat</li><li>stim the star</li></ol></li><li>The tests should only find the word "stir" and/or "star" in each string</li></ol>'
+        },
+        'Feature Set 2 - Phone Home': {
+            html: '<ol class="left-border"><li>Write a regex for checking for a valid US phone number<ol class="nested-1"><li>Save the regex to a variable named: <code>phoneNumber</code></li></ol></li><li>Here is a list of valid US phone numbers that should pass your regex check<ol class="nested-1"><li>818 555 1212</li><li>818-555-1212</li><li>1818 555 1212</li><li>1818-555-1212</li><li>1 818 555 1212</li><li>1-818-555-1212</li><li>(818) 555-1212</li><li>8185551212</li><li>818 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;555 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1212</li><li>818 555-1212</li><li>18185551212</li></ol></li><li>Here is a list of bad or not valid phone numbers that should not pass your regex check<ol class="nested-1"><li>818555121</li><li>818?5551212</li><li>8185-55-1212</li><li>555-1212</li><li>eight one eight, five five five, one two one two</li></ol></li><li>Your regex should be able to verify all the example valid numbers and regect all the example bad numbers</li></ol>'
+        },
+        'Feature Set 3 - Valid Password': {
+            html: '<ol class="left-border"><li>Create a regex for checking if a password is valid. The password must have the following criteria:<ol class="nested-1"><li>Must be between <b>6</b> and <b>32</b> characters long</li><li>Must have at least one capital letter</li><li>Must have at least one lower-case letter</li><li>Must have at least one number</li><li>Must start with a letter (lower-case or upper-case)</li></ol></li><li>Save the regex to a variable named: <code>passwordRegex</code></li><li>Use the below examples to test your password regex against</li><li>Example valid passwords:<ol class="nested-1"><li>helloDude3</li><li>Pa5sWoRd</li><li>thisIsaReallyL0NGpassword</li></ol></li><li>Example invalid passwords:<ol class="nested-1"><li>short</li><li>nocapsbutanumber1</li><li>5tartsWithANumber</li><li>ALLCAPSBUT4NUMBER</li><li>toDamnManyLettersForThisToBeAValidP4sswordYouKnowIt</li><li>ill#g@l_characters</li></ol></li></ol>'
+        }
+    };
+});
