@@ -572,3 +572,37 @@ app.controller('jsRegexController', function() {
         }
     };
 });
+
+//js_form_validation
+app.controller('jsFormValController', function() {
+    this.title = ['JavaScript <br> Form Validation', 'js_form_validation'];
+    this.description = "<p>Building from previous prototypes, this prototype will introduce you to <i>Form Validation</i>. We will start with HTML validation then move onto more complex and powerful validation using JavaScript.</p><p>This prototype is based on the information that you obtained through the following resources <b>(If you haven't gone through these then please do so now).</b></p>";
+    this.branch = 'js_form_validation';
+    this.protoId = 46;
+
+    this.links = {
+        'W3 School': {
+            'JS Form Validation': 'http://www.w3schools.com/js/js_validation.asp'
+        }
+    };
+
+    this.demo = {
+        'Video Prototype Demo': {
+            title: "JS Form Validation",
+            link: "",
+            live: false
+        }
+    };
+
+    this.features = {
+        'Getting Started': {
+            html: '<ol class="left-border"><li>Two folders have been included in the <code>js_form_validation</code> folder:<ol class="nested-1"><li><code>html_validate</code><ul><li>index.html</li></ul></li><li><code>js_validate</code><ul><li>index.html</li><li>script.js</li></ul></li></ol></li></ol>'
+        },
+        'Feature Set 1 - Validation with HTML': {
+            html: '<ol class="left-border"><li>Open the <code>index.html</code> file within the <code>html_validate</code> folder in your browser and familiarize yourself with the form</li><li>All coding for this feature set will be done in the <i>index</i> file within the <b>html_validate</b> folder</li><li>Using only <b>HTML</b>, validate the form</li><li>Things we want to validate:<ol class="nested-1"><li><b>Full Name</b>:<ul><li>Make it <span class="text-danger">required</span></li></ul></li><li><b>D.O.B.</b>:<ul><li>Verify that it is a valid date</li><li>Make it <span class="text-danger">required</span></li></ul></li><li><b>Email</b>:<ul><li>Verify that it is a valid email address</li><li><i>This is easier than you may think, don\'t over think this one</i></li><li>Make it <span class="text-danger">required</span></li></ul></li><li><b>Password</b>:<ul><li>Verify that it starts with a letter</li><li>Verify that it contains a number</li><li>Verify that it has no special characters (<i>letters and numbers only</i>)</li><li>Make it <span class="text-danger">required</span></li></ul></li></ol></li><li>Add any necessary <b>attributes</b> to help with the validation</li><li>If you are unsure what attributes to use, research the following:<ol class="nested-2"><li><b>required</b></li><li><b>type</b></li><li><b>pattern</b></li><li>Anything else related to HTML form validation</li></ol></li><li>The form should not submit unless all inputs are valid</li></ol>'
+        },
+        'Feature Set 2 - Validation with JavaScript': {
+            html: '<ol class="left-border"><li>Anything that says: <b>Extra</b> is not required but recommended to at least try if time permits</li><li>Open the <code>index.html</code> file within the <code>js_validate</code> folder in your browser and familiarize yourself with the form</li><li>All coding for this feature set will be done in the <i>script</i> file within the <b>js_validate</b> folder</li><li>Using JavaScript validate the form</li><li>Things we want to validate:<ol class="nested-1"><li><b>Full Name</b>:<ol class="nested-2"><li>Check for two separate names (<i>first and last</i>)</li><li>Each name should be at least 2 characters</li><li>Allow no special characters except \' (<i>apostrophe</i>)</li><li>Make it <span class="text-danger">required</span></li></ol></li><li><b>D.O.B.</b>:<ol class="nested-2"><li>Verify that it is a valid date using one of the following formats:<ul><li><b>MM/DD/YY</b></li><li><b>MM/DD/YYYY</b></li><li><b>YYYY/MM/DD</b></li></ul></li><li><b>Extra:</b> Check if it is a valid D.O.B. by checking what their age is based off the date given</li><li>Make it <span class="text-danger">required</span></li></ol></li><li><b>Email</b>:<ul><li>Verify that it is a valid email address</li><li>Make it <span class="text-danger">required</span></li></ul></li><li><b>Password</b>:<ul><li>Verify that it contain 6 to 32 characters</li><li>Verify that it starts with a letter</li><li>Verify that it contains at least 1 capital letter</li><li>Verify that it contains at least 1 lower case letter</li><li>Verify that it contains at least 1 number</li><li>Verify that both password fields match</li><li>Make it <span class="text-danger">required</span></li></ul></li></ol></li><li>The <span class="label label-info">Submit Form</span> button should remain disabled until all fields are valid</li><li><b>Extra:</b> For password, as each criteria is met change the font color to green (class="text-success") and unhide the check mark icon</li><li><b>Extra:</b> Give feedback on current input as user types</li></ol>'
+        }
+    }
+});

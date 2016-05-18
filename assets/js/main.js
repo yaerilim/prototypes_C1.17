@@ -89,6 +89,12 @@ app.config(function($routeProvider, navigationProvider){
         ],
         JS: [
             {
+                title: 'JS-Form-Validation',
+                date: toTs('5/20/2016 8:00'),
+                controller: 'jsFormValController',
+                template: 'featureSetsB.html'
+            },
+            {
                 title: 'JS-REGEX',
                 date: toTs('5/16/2016 11:00'),
                 controller: 'jsRegexController',
