@@ -176,7 +176,7 @@ app.config(function($routeProvider, navigationProvider){
         PHP: [
             {
                 title: 'PHP-Intro',
-                date: toTs('3/03/2018 11:00'),
+                date: toTs('5/23/2016 10:00'),
                 controller: 'phpIntroController',
                 template: 'featureSetsB.html'
             },
@@ -238,7 +238,7 @@ app.config(function($routeProvider, navigationProvider){
         AngularJS: [
             {
                 title: 'AngularJS-Intro',
-                date: toTs('3/03/2018 15:00'),
+                date: toTs('5/23/2016 10:00'),
                 controller: 'angIntroController',
                 template: 'featureSetsB.html'
             },
