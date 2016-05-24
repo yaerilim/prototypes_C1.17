@@ -200,7 +200,7 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'PHP-Includes',
-                date: toTs('5/24/2016 10:00'),
+                date: toTs('5/24/2016 9:00'),
                 controller: 'phpIncludesController',
                 template: 'featureSetsB.html'
             },
@@ -212,7 +212,7 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'PHP-Sessions',
-                date: toTs('3/07/2018 10:00:01'),
+                date: toTs('3/07/2018 9:00:01'),
                 controller: 'phpSessionsController',
                 template: 'featureSetsB.html'
             },
@@ -244,13 +244,13 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'AngularJS-DOM-Events',
-                date: toTs('5/24/2016 10:00:02'),
+                date: toTs('5/24/2016 9:00:02'),
                 controller: 'angDomEventsController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'AngularJS-Controllers',
-                date: toTs('5/24/2016 10:00:03'),
+                date: toTs('5/24/2016 9:00:03'),
                 controller: 'angControllersController',
                 template: 'featureSetsB.html'
             },
