@@ -218,7 +218,7 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'PHP-Super-Globals',
-                date: toTs('5/24/2016 10:00:01'),
+                date: toTs('5/24/2016 9:00:01'),
                 controller: 'phpSuperGlobalsController',
                 template: 'featureSetsB.html'
             },
