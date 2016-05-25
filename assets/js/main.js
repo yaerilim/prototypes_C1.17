@@ -188,7 +188,7 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'PHP-Directory-Operations',
-                date: toTs('3/07/2018 10:00'),
+                date: toTs('5/25/2016 8:00'),
                 controller: 'phpDirOpsController',
                 template: 'featureSetsB.html'
             },
@@ -212,7 +212,7 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'PHP-Sessions',
-                date: toTs('3/07/2018 9:00:01'),
+                date: toTs('5/25/2016 8:00:01'),
                 controller: 'phpSessionsController',
                 template: 'featureSetsB.html'
             },
@@ -256,13 +256,13 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'AngularJS-Routes',
-                date: toTs('3/07/2018 10:00'),
+                date: toTs('5/25/2016 8:00:03'),
                 controller: 'angRoutesController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'AngularJS-Services-Intro',
-                date: toTs('3/07/2018 10:00'),
+                date: toTs('5/25/2016 8:00:02'),
                 controller: 'angServiceIntroController',
                 template: 'featureSetsB.html'
             },
