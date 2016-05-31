@@ -282,13 +282,13 @@ app.config(function($routeProvider, navigationProvider){
         Databases: [
             {
                 title: 'Databases-MySQL-Basics',
-                date: toTs('3/09/2018 15:00'),
+                date: toTs('5/30/2016 8:00'),
                 controller: 'mysqlBasicsController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'Databases-Firebase-Intro',
-                date: toTs('3/09/2018 15:00'),
+                date: toTs('5/30/2016 8:00'),
                 controller: 'fbIntroController',
                 template: 'featureSetsB.html'
             }
