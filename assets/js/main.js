@@ -182,7 +182,7 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'PHP-MySQL',
-                date: toTs('3/09/2018 15:00'),
+                date: toTs('5/30/2016 08:00'),
                 controller: 'phpMysqlController',
                 template: 'featureSetsB.html'
             },
@@ -282,7 +282,7 @@ app.config(function($routeProvider, navigationProvider){
         Databases: [
             {
                 title: 'Databases-MySQL-Basics',
-                date: toTs('5/30/2016 8:00'),
+                date: toTs('5/30/2016 08:00'),
                 controller: 'mysqlBasicsController',
                 template: 'featureSetsB.html'
             },
