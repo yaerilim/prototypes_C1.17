@@ -224,7 +224,7 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'PHP-User-Auth',
-                date: toTs('3/18/2018 11:00'),
+                date: toTs('6/02/2016 11:00'),
                 controller: 'phpUserAuthController',
                 template: 'featureSetsB.html'
             },
