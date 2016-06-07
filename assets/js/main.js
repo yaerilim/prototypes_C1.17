@@ -206,7 +206,7 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'PHP-Mail-Example',
-                date: toTs('3/21/2018 11:00'),
+                date: toTs('6/07/2016 08:00'),
                 controller: 'phpMailerController',
                 template: 'featureSetsB.html'
             },
