@@ -158,6 +158,10 @@ li {
     color: green;
 }
 
+.lf-text {
+    color: #3387cc;
+}
+
 /* Background Color Classes */
 .lightblue-bg {
     background-color: lightblue;

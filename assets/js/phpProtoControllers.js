@@ -233,13 +233,13 @@ app.controller('phpMailerController', function() {
 
     this.features = {
         'Getting Started': {
-            html: "<ol class='left-border'><li>Make a new email account (gmail preferred) to handle your email sending.  You shouldn't use your real account as you have to limit this account's security.<li>Follow these <a href='https://support.google.com/accounts/answer/6010255?hl=en' target='_blank'>instructions</a> to enable 'less secure access' on the email account so it can receive messages from your server</li></li><li><code>mail_sender.html</code> is a basic form to send data to your email handler.  You must complete this to send data to your <code>mail_handler.php</code></li><li><code>mail_handler.php</code> Handles mail messages and sends an email through your actual email account. Configure this to use the incoming post data<li>You must make a copy of <code>email_config.default.php</code> and place the copy into <code>email_config.php</code>, and then set it to your email information.</li><li><b>Reminder</b>: Do not add your <code>email_config.php</code> file in your git repo: <code>mail_example</code><ul><li>There is a <code>.gitignore</code> file included with this repo</li><li>Check the <code>.gitignore</code> file to make sure it matches your file name</li></ul></li></ol>"
+            html: "<ol class='left-border'><li><code>mail.php</code> is a basic email example with built in PHP functions. It may or may not work by defualt on your MAMP</li><li><code>mail_withmailer.php</code> includes a standard external mail function, currently configured to send mail through gmail. You must make a copy of <code>email_config.default.php</code> and place the copy into <code>email_config.php</code>, and then set it to your email information.</li><li><b>Reminder</b>: Do not add your <code>email_config.php</code> file in your git repo: <code>mail_example</code><ul><li>There is a <code>.gitignore</code> file included with this repo</li><li>Check the <code>.gitignore</code> file to make sure it matches your file name</li></ul></li></ol>"
         },
         'Feature Set 1': {
-            html: "<ol class='left-border'><li>Update your form to use ajax calls instead</li><li>Have your mail handler respond back with json</li><li>show feedback from the mail send on the original sending page</li></ol>"
+            html: "<ol class='left-border'><li>Call the PHP mailer with your gmail credentials (might want to make a new account and use that)</li><li>Create a custom message</li><li>Test it out! (<i>This may or may not work</i>)</li></ol>"
         },
         'Feature Set 2': {
-            html: "<ol class='left-border'><li>In your mail handler, and your form, validate the data</li><li>Show the feedback on the main page.  For best results, show feedback pertinent feedback for each individual input</li><li>Remember to show that you are sending data to your mail handler when you click the submit button.  It can take quite a while to send mail!</li></ol>"
+            html: "<ol class='left-border'><li>Make a form in another file, name it <code>formhandler.php</code></li><li>From <code>formhandler.php</code>, send the data to <code>mail_withmailer.php</code> and form a custom message based on that form input</li><li>Test it out!</li></ol>"
         }
     }
 });

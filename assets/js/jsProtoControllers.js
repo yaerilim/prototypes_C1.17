@@ -487,3 +487,122 @@ app.controller('jsAjaxController', function() {
         }
     }
 });
+
+//js_oop
+app.controller('jsOopController', function() {
+    this.title = ['JavaScript<br> <b class="lf-text">O</b>bject <b class="lf-text">O</b>riented <b class="lf-text">P</b>rogramming', 'js oop'];
+    this.description = "<p>Building from previous prototypes, we will be taking a closer look at objects and how we can create multiple <i>instances</i> of one object using a constructor function. We will also look at adding a method using <i>prototype</i>. This prototype will be using the Apple iTunes API to retrieve the current top 10 movies on iTunes.</p><p>This prototype is based on the information that you obtained through the following resources <b>(If you haven't gone through these then please do so now).</b></p>";
+    this.branch = 'js_oop';
+    this.protoId = 44;
+
+    this.links = {
+        Presentation: {
+            'JS OOP': 'https://docs.google.com/presentation/d/1DYHm7b1CtDg6jnJi-fScD0qsaupBw-ClzM9sTzx0iH8/pub?start=false&loop=false&delayms=3000&slide=id.g916468413_0_62'
+        },
+        Video: {
+            'JS OOP': 'https://www.youtube.com/watch?feature=player_embedded&v=uLPwXkfPiNQ'
+        }
+    };
+
+    this.demo = {
+        'Video Prototype Demo': {
+            title: "JS OOP",
+            link: "",
+            live: false
+        }
+    };
+
+    this.features = {
+        'Getting Started': {
+            html: "<ol class='left-border'><li>Make an <code>index.html</code> file inside the <code>js_oop</code> folder</li><li>Create a basic <code>HTML</code> DOM structure<ul><li><code>DOCTYPE</code> tag</li><li><code>HTML</code> tag</li><li><code>head</code> tag</li><li><code>body</code> tag</li></ul></li><li>Add an <code>h1</code> tag in the body that says: <code>Javascript OOP Prototype</code></li><li>Add <code>script</code> tags between your <code>head</code> tags</li></ol>"
+        },
+        'Feature Set 1 - Coin Stack': {
+            html: "<h4>Between your script tags</h4><ol class='left-border'><li>Create a constructor function named <code>coin_stack</code><ol class='nested-1'><li>The constructor should take in one parameter that will be used to set the initial amount of coins<ul class='clean-list'><li><button id='hint1btn' class='btn btn-danger btn-xs' type='button' data-toggle='collapse' data-target='#hint1' aria-expanded='false' aria-controls='hint1'>Show Hint</button></li><li id='hint1' class='clean-list collapse'><i>Hint:</i><div class='highlight highlight-source-js'><pre><span class='pl-k'>function</span> <span class='pl-en'>coin_stack</span>(<span class='pl-smi'>starting_amount</span>){<br><br>}</pre></div></li></ul></li></ol></li><li>Add a property <code>value</code> to your constructor<ol class='nested-1'><li><code>value</code> should be set to the initial coin amount</li><li>Remember when setting a property you use the <code>this</code> keyword<ul class='clean-list'><li><button id='hint2btn' class='btn btn-danger btn-xs' type='button' data-toggle='collapse' data-target='#hint2' aria-expanded='false' aria-controls='hint2'>Show Hint</button></li><li id='hint2' class='clean-list collapse'><i>Hint:</i><div class='highlight highlight-source-js'><pre><span class='pl-k'>function</span> <span class='pl-en'>coin_stack</span>(<span class='pl-smi'>starting_amount</span>){<br><br>&nbsp;&nbsp;<span class='pl-v'>this</span>.<span class='pl-c1'>value</span> <span class='pl-k'>=</span> starting_amount;<br>}</pre></div></li></ul></li></ol></li><li>Test your constructor:<ol class='nested-1'><li>Using the <code>new</code> keyword, make an instance of your object named: <code>my_coin_stack</code> that starts with <b>50</b> coins<ul class='clean-list'><li><button id='hint3btn' class='btn btn-danger btn-xs' type='button' data-toggle='collapse' data-target='#hint3' aria-expanded='false' aria-controls='hint3'>Show Hint</button></li><li id='hint3' class='clean-list collapse'><i>Hint:</i><div class='highlight highlight-source-js'><pre><span class='pl-k'>var</span> my_coin_stack <span class='pl-k'>=</span> <span class='pl-k'>new</span> <span class='pl-en'>coin_stack</span>(<span class='pl-c1'>50</span>);</pre></div></li></ul></li><li>Use a <code>console.log</code> to log out the amount of coins your new <code>coin_stack</code> object contains<ul><li><b>Example Output: </b><code>my_coin_stack contains 50 coins</code><ul class='clean-list'><li><button id='hint4btn' class='btn btn-danger btn-xs' type='button' data-toggle='collapse' data-target='#hint4' aria-expanded='false' aria-controls='hint4'>Show Hint</button></li><li id='hint4' class='clean-list collapse'><i>Hint:</i><div class='highlight highlight-source-js'><pre><span class='pl-en'>console</span>.<span class='pl-c1'>log</span>(<span class='pl-s'><span class='pl-pds'>'</span>my_coin_stack contains <span class='pl-pds'>'</span></span>, <span class='pl-smi'>my_coin_stack</span>.<span class='pl-c1'>value</span>, <span class='pl-s'><span class='pl-pds'>'</span> coins<span class='pl-pds'>'</span></span>);</pre></div></li></ul></li></ul></li></ol></li></ol>"
+        },
+        'Feature Set 2 - Add Remove Coins': {
+            html: "<h4>Between your script tags</h4><ol class='left-border'><li>Within your constructor function, create a method that will add coins to the coin stack<ol class='nested-1'><li>Name the method: <code>add_coins</code></li><li>The method should take <b>1</b> parameter that will represent the amount of coins to be added</li><li>The coins should be added to the <code>value</code> property of <code>coin_stack</code></li><li>The method does not need to return anything</li></ol></li><li>Within your constructor function, create a method that will remove coins from the coin stack<ol class='nested-1'><li>Name the method: <code>remove_coins</code></li><li>The method should take <b>1</b> parameter that will represent the amount of coins to be removed</li><li>If <code>value</code> is <b>>=</b> the amount being removed:<ol class='nested-2'><li>Remove the given amount of coins from <code>value</code></li><li>Return the amount of coins removed</li></ol></li><li>If <code>value</code> is <b><</b> the amount being removed:<ol class='nested-2'><li>Remove all the coins available from <code>value</code> (<code>value</code> should be 0)</li><li>Return the amount of coins removed</li></ol></li></ol></li><li>Test the 2 new methods:<ol class='nested-1'><li>Use the <code>my_coin_stack</code> variable from above to preform the following actions:<ol class='nested-2'><li>Add 15 coins to your stack, using your new <code>add_coins</code> method</li><li>Log out your new total coin stack in the following format: <code>I have 65 coins in my coin stack</code> <b>(DO NOT hard code the number, use your object)</b></li><li>Subtract 37 coins from your stack, using your new <code>remove_coins</code> method</li><li>Log out your new total in the same format as above</li><li>Subtract 55 coins from your stack, using your new <code>remove_coins</code> method</li><li>Log out your new total in the same format as above</li></ol></li></ol></li></ol>"
+        },
+        'Feature Set 3 - Prototype in the prototype': {
+            html: "<h4>Between your script tags</h4><ol class='left-border'><li>Outside of your constructor function, <code>prototype</code> a new method to your <code>coin_stack</code> object that will remove coins from one <code>coin_stack</code> instance and then add them to a different one<ol class='nested-1'><li>Name the method: <code>transfer_coins</code></li><li>The method should take <b>2</b> parameters<ol class='nested-2'><li>One to hold the object that the coins are being transferred from</li><li>One to hold the amount of coins that are being transferred</li><li class='clean-list'><button id='hint5btn' class='btn btn-danger btn-xs' type='button' data-toggle='collapse' data-target='#hint5' aria-expanded='false' aria-controls='hint5'>Show Hint</button></li><li id='hint5' class='clean-list collapse'><i>Hint:</i><div class='highlight highlight-source-js'><pre><span class='pl-smi'>coin_stack</span>.<span class='pl-c1'>prototype</span>.<span class='pl-en'>transfer_coins</span> <span class='pl-k'>=</span> <span class='pl-k'>function</span>(<span class='pl-smi'>from_obj</span>, <span class='pl-smi'>amount</span>){<span class='pl-k'>...</span>}</pre></div></li></ol></li><li>The method should take the given amount of coins and <i>remove</i> them from the passed in object then <i>add</i> them to the current object</li><li>The function should return the total amount that was transferred<ul><li><b>Hint:</b> utilize the add and remove functions that you have already made from <i>feature set 2</i></li></ul></li></ol></li><li>Test your new prototyped method:<ol class='nested-1'><li>Create 2 new <code>coin_stack</code> instances with <b>50</b> coins each, use the following names:<ol class='nested-2'><li><code>erics_coins</code></li><li><code>dans_coins</code></li></ol></li><li>Use <code>console.log</code> to log out the values of both coin stacks</li><li>Using your new method transfer <b>30</b> coins from <code>dans_coins</code> to <code>erics_coins</code></li><li>Use <code>console.log</code> to log out the values of both coin stacks<ol class='nested-2'><li>Does Dan now have <b>20</b> coins?</li><li>Does Eric now have <b>80</b> coins?</li><li>If you answered <b>NO</b> to either of those revisit your code</li></ol></li><li>Use your method again to transfer <code>120</code> coins from <code>erics_coins</code> to <code>dans_coins</code></li><li>Use <code>console.log</code> to log out the values of both coin stacks<ol class='nested-2'><li>Does Dan now have <b>100</b> coins?</li><li>Does Eric now have <b>0</b> coins?</li><li>If you answered <b>NO</b> to either of those revisit your code</li></ol></li></ol></li></ol>"
+        }
+    }
+});
+
+//js_regex
+app.controller('jsRegexController', function() {
+    this.title = ['JavaScript<br> <b class="lf-text">Reg</b>ular <b class="lf-text">Ex</b>pressions', 'js_ajax'];
+    this.description = "<p>Building from previous prototypes, this prototype will introduce you to <i>Regular Expressions</i></p><p>This prototype is based on the information that you obtained through the following resources <b>(If you haven't gone through these then please do so now).</b></p>";
+    this.branch = 'js_regex';
+    this.protoId = 45;
+
+    this.links = {
+        Presentation: {
+            'JS AJAX': 'https://docs.google.com/presentation/d/1xtn4cLXmWXx3caxrXgl418jLOQc8MC5-pY-r0TcjRVs/pub?start=false&loop=false&delayms=3000&slide=id.p'
+        },
+        'W3 School': {
+            'JS Regex': 'http://www.w3schools.com/jsref/jsref_obj_regexp.asp',
+            'JS String Regex Search': 'http://www.w3schools.com/jsref/jsref_match.asp'
+        },
+        'Other Resources': {
+            'Regex Cheat Sheet': 'https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/',
+            'Regex Tester': 'https://regex101.com/'
+        }
+    };
+
+    this.demo = {
+        'Video Prototype Demo': {
+            title: "JS AJAX",
+            link: "",
+            live: false
+        }
+    };
+
+    this.features = {
+        'Getting Stared': {
+            html: '<ol class="left-border"><li>In your <code>js_regex</code> folder create an <code>index.html</code> file</li><li>Within your <code>index.html</code>:<ol class="nested-1"><li>Create a basic html skeleton</li><li>Add a title tag in your head section with the vale of: <b>js_regex</b></li><li>Add <code>script</code> tags within your head section</li><li>All code for this prototype will be completed in the script tags</li><li>Within your body add a <code>h1</code> tag with the text: <b>JavaScript - Regular Expressions</b></li></ol></li></ol>'
+        },
+        'Feature Set 1 - Easing In': {
+            html: '<ol class="left-border"><li>Write a regular expression (regex) to find the letter <b>"e"</b> in the string <b>hello</b><ol class="nested-1"><li>Save the regex to a variable named: <code>fs1a</code></li></ol></li><li>Write a regex to find <b>ALL</b> the "e"s in the string <b>HE entEred</b>, regardless if it is capitalized or not<ol class="nested-1"><li>Save the regex to a variable named: <code>fs1b</code></li></ol></li><li>Write a single regex to find both "star" and "stir" in "stir the star", but not, for example "stat" or "stim"<ol class="nested-1"><li>Save the regex to a variable named: <code>fs1c</code></li></ol></li><li>Use the following strings to test your regex:<ol class="nested-1"><li>stir the star</li><li>stim the stat</li><li>stir the stat</li><li>stim the star</li></ol></li><li>The tests should only find the word "stir" and/or "star" in each string</li></ol>'
+        },
+        'Feature Set 2 - Phone Home': {
+            html: '<ol class="left-border"><li>Write a regex for checking for a valid US phone number<ol class="nested-1"><li>Save the regex to a variable named: <code>phoneNumber</code></li></ol></li><li>Here is a list of valid US phone numbers that should pass your regex check<ol class="nested-1"><li>818 555 1212</li><li>818-555-1212</li><li>1818 555 1212</li><li>1818-555-1212</li><li>1 818 555 1212</li><li>1-818-555-1212</li><li>(818) 555-1212</li><li>8185551212</li><li>818 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;555 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1212</li><li>818 555-1212</li><li>18185551212</li></ol></li><li>Here is a list of bad or not valid phone numbers that should not pass your regex check<ol class="nested-1"><li>818555121</li><li>818?5551212</li><li>8185-55-1212</li><li>555-1212</li><li>eight one eight, five five five, one two one two</li></ol></li><li>Your regex should be able to verify all the example valid numbers and regect all the example bad numbers</li></ol>'
+        },
+        'Feature Set 3 - Valid Password': {
+            html: '<ol class="left-border"><li>Create a regex for checking if a password is valid. The password must have the following criteria:<ol class="nested-1"><li>Must be between <b>6</b> and <b>32</b> characters long</li><li>Must have at least one capital letter</li><li>Must have at least one lower-case letter</li><li>Must have at least one number</li><li>Must start with a letter (lower-case or upper-case)</li></ol></li><li>Save the regex to a variable named: <code>passwordRegex</code></li><li>Use the below examples to test your password regex against</li><li>Example valid passwords:<ol class="nested-1"><li>helloDude3</li><li>Pa5sWoRd</li><li>thisIsaReallyL0NGpassword</li></ol></li><li>Example invalid passwords:<ol class="nested-1"><li>short</li><li>nocapsbutanumber1</li><li>5tartsWithANumber</li><li>ALLCAPSBUT4NUMBER</li><li>toDamnManyLettersForThisToBeAValidP4sswordYouKnowIt</li><li>ill#g@l_characters</li></ol></li></ol>'
+        }
+    };
+});
+
+//js_form_validation
+app.controller('jsFormValController', function() {
+    this.title = ['JavaScript <br> Form Validation', 'js_form_validation'];
+    this.description = "<p>Building from previous prototypes, this prototype will introduce you to <i>Form Validation</i>. We will start with HTML validation then move onto more complex and powerful validation using JavaScript.</p><p>This prototype is based on the information that you obtained through the following resources <b>(If you haven't gone through these then please do so now).</b></p>";
+    this.branch = 'js_form_validation';
+    this.protoId = 46;
+
+    this.links = {
+        'W3 School': {
+            'JS Form Validation': 'http://www.w3schools.com/js/js_validation.asp'
+        }
+    };
+
+    this.demo = {
+        'Video Prototype Demo': {
+            title: "JS Form Validation",
+            link: "",
+            live: false
+        }
+    };
+
+    this.features = {
+        'Getting Started': {
+            html: '<ol class="left-border"><li>Two folders have been included in the <code>js_form_validation</code> folder:<ol class="nested-1"><li><code>html_validate</code><ul><li>index.html</li></ul></li><li><code>js_validate</code><ul><li>index.html</li><li>script.js</li></ul></li></ol></li></ol>'
+        },
+        'Feature Set 1 - Validation with HTML': {
+            html: '<ol class="left-border"><li>Open the <code>index.html</code> file within the <code>html_validate</code> folder in your browser and familiarize yourself with the form</li><li>All coding for this feature set will be done in the <i>index</i> file within the <b>html_validate</b> folder</li><li>Using only <b>HTML</b>, validate the form</li><li>Things we want to validate:<ol class="nested-1"><li><b>Full Name</b>:<ul><li>Make it <span class="text-danger">required</span></li></ul></li><li><b>D.O.B.</b>:<ul><li>Verify that it is a valid date</li><li>Make it <span class="text-danger">required</span></li></ul></li><li><b>Email</b>:<ul><li>Verify that it is a valid email address</li><li><i>This is easier than you may think, don\'t over think this one</i></li><li>Make it <span class="text-danger">required</span></li></ul></li><li><b>Password</b>:<ul><li>Verify that it starts with a letter</li><li>Verify that it contains a number</li><li>Verify that it has no special characters (<i>letters and numbers only</i>)</li><li>Make it <span class="text-danger">required</span></li></ul></li></ol></li><li>Add any necessary <b>attributes</b> to help with the validation</li><li>If you are unsure what attributes to use, research the following:<ol class="nested-2"><li><b>required</b></li><li><b>type</b></li><li><b>pattern</b></li><li>Anything else related to HTML form validation</li></ol></li><li>The form should not submit unless all inputs are valid</li></ol>'
+        },
+        'Feature Set 2 - Validation with JavaScript': {
+            html: '<ol class="left-border"><li>Anything that says: <b>Extra</b> is not required but recommended to at least try if time permits</li><li>Open the <code>index.html</code> file within the <code>js_validate</code> folder in your browser and familiarize yourself with the form</li><li>All coding for this feature set will be done in the <i>script</i> file within the <b>js_validate</b> folder</li><li>Using JavaScript validate the form</li><li>Things we want to validate:<ol class="nested-1"><li><b>Full Name</b>:<ol class="nested-2"><li>Check for two separate names (<i>first and last</i>)</li><li>Each name should be at least 2 characters</li><li>Allow no special characters except \' (<i>apostrophe</i>)</li><li>Make it <span class="text-danger">required</span></li></ol></li><li><b>D.O.B.</b>:<ol class="nested-2"><li>Verify that it is a valid date using one of the following formats:<ul><li><b>MM/DD/YY</b></li><li><b>MM/DD/YYYY</b></li><li><b>YYYY/MM/DD</b></li></ul></li><li><b>Extra:</b> Check if it is a valid D.O.B. by checking what their age is based off the date given</li><li>Make it <span class="text-danger">required</span></li></ol></li><li><b>Email</b>:<ul><li>Verify that it is a valid email address</li><li>Make it <span class="text-danger">required</span></li></ul></li><li><b>Password</b>:<ul><li>Verify that it contain 6 to 32 characters</li><li>Verify that it starts with a letter</li><li>Verify that it contains at least 1 capital letter</li><li>Verify that it contains at least 1 lower case letter</li><li>Verify that it contains at least 1 number</li><li>Verify that both password fields match</li><li>Make it <span class="text-danger">required</span></li></ul></li></ol></li><li>The <span class="label label-info">Submit Form</span> button should remain disabled until all fields are valid</li><li><b>Extra:</b> For password, as each criteria is met change the font color to green (class="text-success") and unhide the check mark icon</li><li><b>Extra:</b> Give feedback on current input as user types</li></ol>'
+        }
+    }
+});
