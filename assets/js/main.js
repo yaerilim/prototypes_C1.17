@@ -156,19 +156,19 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'JS-Comparisons-Conditionals',
-                date: toTs('5/20/2018 8:00'),
+                date: toTs('8/16/2016 8:00'),
                 controller: 'jsCompCondController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'JS-Special-Data-Types',
-                date: toTs('5/20/2018 8:00'),
+                date: toTs('8/16/2016 8:00'),
                 controller: 'jsSpecDataTypesController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'JS-Primitive-Data-Types',
-                date: toTs('5/20/2018 8:00'),
+                date: toTs('8/16/2016 8:00'),
                 controller: 'jsPrimDataTypesController',
                 template: 'featureSetsB.html'
             }
