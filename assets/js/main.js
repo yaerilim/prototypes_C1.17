@@ -144,13 +144,13 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'JS-Functions',
-                date: toTs('5/20/2018 8:00'),
+                date: toTs('8/17/2016 16:00'),
                 controller: 'jsFunctionsController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'JS-DOM-Events',
-                date: toTs('5/20/2018 8:00'),
+                date: toTs('8/17/2016 8:00'),
                 controller: 'jsDomEventsController',
                 template: 'featureSetsB.html'
             },
