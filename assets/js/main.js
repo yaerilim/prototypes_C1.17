@@ -138,7 +138,7 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'JS-jQuery',
-                date: toTs('5/20/2018 8:00'),
+                date: toTs('8/18/2016 8:00'),
                 controller: 'jsJqueryController',
                 template: 'featureSetsB.html'
             },
