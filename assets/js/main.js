@@ -132,7 +132,7 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'JS-DOM-Creation',
-                date: toTs('5/20/2018 8:00'),
+                date: toTs('8/19/2016 8:00'),
                 controller: 'jsDomCreationController',
                 template: 'featureSetsB.html'
             },
