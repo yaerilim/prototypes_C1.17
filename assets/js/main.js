@@ -126,7 +126,7 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'JS-Ref-Data-Types',
-                date: toTs('5/20/2018 8:00'),
+                date: toTs('8/22/2016 8:00'),
                 controller: 'jsRefDataTypesController',
                 template: 'featureSetsB.html'
             },
