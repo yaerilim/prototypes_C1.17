@@ -108,7 +108,7 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'JS-AJAX',
-                date: toTs('5/20/2018 8:00'),
+                date: toTs('9/5/2016 8:00'),
                 controller: 'jsAjaxController',
                 template: 'featureSetsB.html'
             },
