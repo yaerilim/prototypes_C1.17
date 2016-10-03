@@ -244,7 +244,7 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'AngularJS-DOM-Events',
-                date: toTs('5/20/2018 8:00'),
+                date: toTs('5/20/2016 8:00'),
                 controller: 'angDomEventsController',
                 template: 'featureSetsB.html'
             },
