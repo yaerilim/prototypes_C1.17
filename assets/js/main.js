@@ -288,7 +288,7 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'Databases-Firebase-Intro',
-                date: toTs('5/20/2018 8:00'),
+                date: toTs('10/18/2016 8:00'),
                 controller: 'fbIntroController',
                 template: 'featureSetsB.html'
             }
