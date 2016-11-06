@@ -96,19 +96,19 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'JS-REGEX',
-                date: toTs('5/20/2016 8:00'),
+                date: toTs('5/20/2018 8:00'),
                 controller: 'jsRegexController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'JS-OOP',
-                date: toTs('8/30/2016 8:00'),
+                date: toTs('8/30/2018 8:00'),
                 controller: 'jsOopController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'JS-AJAX',
-                date: toTs('9/5/2016 8:00'),
+                date: toTs('9/5/2018 8:00'),
                 controller: 'jsAjaxController',
                 template: 'featureSetsB.html'
             },
@@ -120,55 +120,55 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'JS-Repeat-Blocks',
-                date: toTs('8/23/2016 8:00'),
+                date: toTs('8/23/2018 8:00'),
                 controller: 'jsLoopsController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'JS-Ref-Data-Types',
-                date: toTs('8/22/2016 8:00'),
+                date: toTs('8/22/2018 8:00'),
                 controller: 'jsRefDataTypesController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'JS-DOM-Creation',
-                date: toTs('8/19/2016 8:00'),
+                date: toTs('8/19/2018 8:00'),
                 controller: 'jsDomCreationController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'JS-jQuery',
-                date: toTs('8/18/2016 8:00'),
+                date: toTs('8/18/2018 8:00'),
                 controller: 'jsJqueryController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'JS-Functions',
-                date: toTs('8/17/2016 16:00'),
+                date: toTs('8/17/2018 16:00'),
                 controller: 'jsFunctionsController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'JS-DOM-Events',
-                date: toTs('8/17/2016 8:00'),
+                date: toTs('8/17/2018 8:00'),
                 controller: 'jsDomEventsController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'JS-Comparisons-Conditionals',
-                date: toTs('8/16/2016 8:00'),
+                date: toTs('8/16/2018 8:00'),
                 controller: 'jsCompCondController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'JS-Special-Data-Types',
-                date: toTs('8/16/2016 8:00'),
+                date: toTs('8/16/2018 8:00'),
                 controller: 'jsSpecDataTypesController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'JS-Primitive-Data-Types',
-                date: toTs('8/16/2016 8:00'),
+                date: toTs('8/16/2018 8:00'),
                 controller: 'jsPrimDataTypesController',
                 template: 'featureSetsB.html'
             }
@@ -176,61 +176,61 @@ app.config(function($routeProvider, navigationProvider){
         PHP: [
             {
                 title: 'PHP-Intro',
-                date: toTs('5/20/2016 8:00'),
+                date: toTs('5/20/2018 8:00'),
                 controller: 'phpIntroController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'PHP-MySQL',
-                date: toTs('10/10/2016 12:00'),
+                date: toTs('10/10/2018 12:00'),
                 controller: 'phpMysqlController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'PHP-Directory-Operations',
-                date: toTs('5/20/2016 8:00'),
+                date: toTs('5/20/2018 8:00'),
                 controller: 'phpDirOpsController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'PHP-File-Upload',
-                date: toTs('5/20/2016 8:00'),
+                date: toTs('5/20/2018 8:00'),
                 controller: 'phpFileUploadController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'PHP-Includes',
-                date: toTs('5/20/2016 8:00'),
+                date: toTs('5/20/2018 8:00'),
                 controller: 'phpIncludesController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'PHP-Mail-Example',
-                date: toTs('5/20/2016 8:00'),
+                date: toTs('5/20/2018 8:00'),
                 controller: 'phpMailerController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'PHP-Sessions',
-                date: toTs('5/20/2016 8:00'),
+                date: toTs('5/20/2018 8:00'),
                 controller: 'phpSessionsController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'PHP-Super-Globals',
-                date: toTs('5/20/2016 8:00'),
+                date: toTs('5/20/2018 8:00'),
                 controller: 'phpSuperGlobalsController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'PHP-User-Auth',
-                date: toTs('5/20/2016 8:00'),
+                date: toTs('5/20/2018 8:00'),
                 controller: 'phpUserAuthController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'PHP-RegEx',
-                date: toTs('5/20/2016 8:00'),
+                date: toTs('5/20/2018 8:00'),
                 controller: 'phpRegexController',
                 template: 'featureSetsB.html'
             }
@@ -238,43 +238,43 @@ app.config(function($routeProvider, navigationProvider){
         AngularJS: [
             {
                 title: 'AngularJS-Intro',
-                date: toTs('10/3/2016 10:00'),
+                date: toTs('10/3/2018 10:00'),
                 controller: 'angIntroController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'AngularJS-DOM-Events',
-                date: toTs('5/20/2016 8:00'),
+                date: toTs('5/20/2018 8:00'),
                 controller: 'angDomEventsController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'AngularJS-Controllers',
-                date: toTs('10/04/2016 10:00'),
+                date: toTs('10/04/2018 10:00'),
                 controller: 'angControllersController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'AngularJS-Routes',
-                date: toTs('10/07/2016 8:00'),
+                date: toTs('10/07/2018 8:00'),
                 controller: 'angRoutesController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'AngularJS-Services-Intro',
-                date: toTs('10/04/2016 12:00'),
+                date: toTs('10/04/2018 12:00'),
                 controller: 'angServiceIntroController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'AngularJS-Services-Creation',
-                date: toTs('10/07/2016 8:00'),
+                date: toTs('10/07/2018 8:00'),
                 controller: 'angServiceCreationController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'AngularJS-Directive-Creation',
-                date: toTs('10/25/2016 8:00'),
+                date: toTs('10/25/2018 8:00'),
                 controller: 'angDirectiveCreationController',
                 template: 'featureSetsB.html'
             }
@@ -282,13 +282,13 @@ app.config(function($routeProvider, navigationProvider){
         Databases: [
             {
                 title: 'Databases-MySQL-Basics',
-                date: toTs('10/10/2016 10:00'),
+                date: toTs('10/10/2018 10:00'),
                 controller: 'mysqlBasicsController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'Databases-Firebase-Intro',
-                date: toTs('10/18/2016 8:00'),
+                date: toTs('10/18/2018 8:00'),
                 controller: 'fbIntroController',
                 template: 'featureSetsB.html'
             }
@@ -296,7 +296,7 @@ app.config(function($routeProvider, navigationProvider){
         Tutorials: [
             {
                 title: 'Tutorials-Dev-Tools-Mobile-View',
-                date: toTs('4/4/2016 10:00'),
+                date: toTs('4/4/2018 10:00'),
                 controller: 'dtMobileViewController',
                 template: 'tutorials.html'
             }
