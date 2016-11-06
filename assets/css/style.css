@@ -1,0 +1,258 @@
+.jumbotron {
+    background-image: url("../images/logos/main-header.jpg");
+}
+
+#page-header h1 {
+    text-shadow: 1px 1px 2px whitesmoke, 3px 3px 5px black;
+}
+
+#page-header p {
+    text-shadow: 2px 2px 2px whitesmoke, 2px 2px 4px black;
+    font-weight: bold;
+}
+
+.btn-lfz {
+    background-color: #3387cc;
+    color: #fff;
+    text-shadow: none;
+    box-shadow: 1px 1px 2px whitesmoke, 3px 3px 5px black;
+}
+
+li {
+    line-height: 1.75;
+}
+
+#page-header {
+    position: relative;
+}
+
+#page-header > img {
+    position: absolute;
+    width: 25%;
+    bottom: 0;
+    right: 0;
+}
+
+.main-nav .panel-info {
+    border: none;
+}
+
+.main-nav .panel-info .panel-heading {
+    background-color: #fff;
+    color: #3387cc;
+}
+
+.main-nav .panel-info .panel-heading:hover {
+    background-color: #3387cc;
+    color: #fff;
+}
+
+.main-nav .panel .panel-body a{
+    color: #3387cc;
+}
+
+.main-nav .panel .nav-active {
+    background-color: #3387cc;
+    color: #fff;
+}
+
+.main-nav .nav-pills .sub-nav-active a {
+    background-image: url("../images/logos/main-header.jpg");
+    background-size: 110%;
+    background-position: 235% 48%;
+}
+
+.panel-tutorial .panel-heading {
+    background-color: #3387cc;
+    color: white;
+}
+
+.panel-tutorial {
+    border-color:   gray;
+}
+
+.center {
+    text-align: center;
+}
+
+.left-border {
+    border-left: 4px solid lightgray;
+    margin: 1% 3%;
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+.normalize {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.8;
+}
+
+.nested-1 {
+    list-style-type: lower-roman;
+}
+
+.nested-2 {
+    list-style-type: lower-alpha;
+}
+
+.clean-list {
+    list-style-type: none;
+    margin-left: -20px;
+}
+
+.tutorial-body li img,
+.code-body li img{
+    display: block;
+    margin: 12px 0 20px 2%;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px black;
+}
+
+.code-body li img {
+    max-width: 75%;
+}
+
+.tutorial-body li img {
+    max-width: 90%;
+}
+
+.description {
+    font-size: 1.3em;
+    text-align: justify;
+    margin: 5px 3%;
+}
+
+.code {
+    background-color: #efefef;
+    font-family: "Courier New", Courier, monospace;
+    padding: 10px 0;
+    margin: 4px 0;
+}
+
+.code,
+.code ul,
+.code ol {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.code li {
+    line-height: 1.4em;
+}
+
+/* Text Color Classes */
+.lavender-txt {
+    color: lavender;
+}
+
+.dark-blue-txt {
+    color: darkblue;
+}
+
+.lightgreen-txt {
+    color: lightgreen;
+}
+
+.green-txt {
+    color: green;
+}
+
+.lf-text {
+    color: #3387cc;
+}
+
+/* Background Color Classes */
+.lightblue-bg {
+    background-color: lightblue;
+}
+
+.blue-bg {
+    background-color: blue;
+}
+
+.purple-bg {
+    background-color: purple;
+}
+
+.black-bg {
+    background-color: black;
+}
+
+/* Text Sizing */
+.larger-txt {
+    font-size: 1.35em;
+}
+
+.clean-list {
+    list-style-type: none;
+}
+
+
+/* JS Syntax Highlighting */
+.highlight-source-js .pl-k {
+    color: #a71d5d;
+}
+
+.highlight-source-js .pl-en {
+    color: #795da3;
+}
+
+.highlight-source-js .pl-c1 {
+    color: #0086b3;
+}
+
+.highlight-source-js .pl-s {
+    color: #183691;
+}
+
+.highlight-source-js .pl-smi {
+    color: #333;
+}
+
+.highlight-source-js .pl-pds {
+    color: #b658cc;
+}
+
+/* HTML Syntax Highlights */
+.highlight-text-html-basic .pl-ent {
+    color: #63a35c;
+}
+
+.highlight-text-html-basic .pl-e {
+    color: #795da3;
+}
+
+.highlight-text-html-basic .pl-s {
+    color: #183691;
+}
+
+/* SQL Syntax Highlights */
+.highlight-source-sql .pl-k {
+    color: #a71d5d;
+}
+
+.highlight-source-sql .pl-s {
+    color: #183691
+}
+
+/* PHP Syntax Highlights */
+.highlight-text-html-php .pl-smi {
+    color: #333;
+}
+
+.highlight-text-html-php .pl-k {
+    color: #a71d5d;
+}
+
+.highlight-text-html-php .pl-c1 {
+    color: #0086b3;
+}
+
+.highlight-text-html-php .pl-s {
+    color: #183691;
+}
+
+.highlight-text-html-php .pl-c {
+    color: #969896;
+}

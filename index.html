@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prototype Instructions</title>
+    <link rel="icon" href="assets/images/logos/lf-title-logo.gif">
+
+    <!-- Included Files and Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script> <!-- AngularJS CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-route.js"></script> <!-- AngularJS Routes CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-sanitize.js"></script> <!-- AngularJS Sanitize CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <!-- Bootstrap JS CDN -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/services.js"></script>
+    <script src="assets/js/directives.js"></script>
+    <script src="assets/js/appControllers.js"></script>
+    <script src="assets/js/cssProtoControllers.js"></script>
+    <script src="assets/js/htmlProtoControllers.js"></script>
+    <script src="assets/js/jsProtoControllers.js"></script>
+    <script src="assets/js/phpProtoControllers.js"></script>
+    <script src="assets/js/angProtoControllers.js"></script>
+    <script src="assets/js/dbProtoControllers.js"></script>
+    <script src="assets/js/tutorialControllers.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body data-ng-app="protoInstructions">
+<div class="container-fluid" data-ng-controller="mainController as mc">
+    <div class="jumbotron col-lg-offset-1 col-lg-10">
+        <div class="container" id="page-header">
+            <h1>Prototype Instructions</h1>
+            <p>Select a prototype on the left to view its instructions</p>
+            <p><a class='btn btn-lfz btn-lg' href="#/">Home</a></p>
+            <img src="assets/images/logos/LF_LOGO.png" alt="LearningFuze Logo">
+        </div>
+    </div>
+
+    <div class="main-nav col-xs-12 col-md-3 col-lg-2 col-lg-offset-1 panel-group" id="accordion" data-ng-controller="navController as nc">
+        <div class="panel panel-info" data-ng-repeat="(name, val) in sideNav" data-ng-if="nc.showOption(val, mc.pastNow)">
+            <div class="panel-heading" data-ng-class="{'nav-active': mc.active == name}">
+                <h3 class="panel-title">
+                    <a id="{{ 'a_' + name }}" data-toggle="collapse" href="#{{ name }}" data-parent="#accordion" data-ng-click="mc.active = name">{{ name }}</a>
+                </h3>
+            </div>
+            <div id="{{ name }}" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li role="presentation" data-ng-click="mc.subActive = proto.title" data-ng-repeat="proto in val | orderBy: '-date'" data-ng-if="mc.pastNow(proto.date)" data-ng-class="{'sub-nav-active': mc.subActive == proto.title}"><a href="#{{ proto.title }}">{{ proto.title }}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- Nav accordion col-xs-2, navController -->
+    {{ mc.updateNav() }}
+    <div class="col-xs-12 col-md-9 col-lg-8">
+        <div data-ng-view></div>
+    </div> <!-- Main content col-xs-10 instructController -->
+</div> <!-- Main container and mainController -->
+</body>
+</html>
