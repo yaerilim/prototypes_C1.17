@@ -132,43 +132,43 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'JS-DOM-Creation',
-                date: toTs('8/19/2018 8:00'),
+                date: toTs('11/10/2016 8:00'),
                 controller: 'jsDomCreationController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'JS-jQuery',
-                date: toTs('8/18/2018 8:00'),
+                date: toTs('11/9/2016 8:01'),
                 controller: 'jsJqueryController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'JS-Functions',
-                date: toTs('8/17/2018 16:00'),
+                date: toTs('11/9/2016 8:00'),
                 controller: 'jsFunctionsController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'JS-DOM-Events',
-                date: toTs('8/17/2018 8:00'),
+                date: toTs('11/8/2016 8:01'),
                 controller: 'jsDomEventsController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'JS-Comparisons-Conditionals',
-                date: toTs('8/16/2018 8:00'),
+                date: toTs('11/8/2016 8:00'),
                 controller: 'jsCompCondController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'JS-Special-Data-Types',
-                date: toTs('8/16/2018 8:00'),
+                date: toTs('11/7/2016 8:01'),
                 controller: 'jsSpecDataTypesController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'JS-Primitive-Data-Types',
-                date: toTs('8/16/2018 8:00'),
+                date: toTs('11/7/2016 8:00'),
                 controller: 'jsPrimDataTypesController',
                 template: 'featureSetsB.html'
             }
