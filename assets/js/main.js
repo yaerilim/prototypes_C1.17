@@ -120,7 +120,7 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'JS-Repeat-Blocks',
-                date: toTs('8/23/2018 8:00'),
+                date: toTs('8/23/2016 8:00'),
                 controller: 'jsLoopsController',
                 template: 'featureSetsB.html'
             },
