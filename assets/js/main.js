@@ -238,19 +238,19 @@ app.config(function($routeProvider, navigationProvider){
         AngularJS: [
             {
                 title: 'AngularJS-Intro',
-                date: toTs('10/3/2018 10:00'),
+                date: toTs('10/3/2016 10:00'),
                 controller: 'angIntroController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'AngularJS-DOM-Events',
-                date: toTs('5/20/2018 8:00'),
+                date: toTs('5/20/2016 8:00'),
                 controller: 'angDomEventsController',
                 template: 'featureSetsB.html'
             },
             {
                 title: 'AngularJS-Controllers',
-                date: toTs('10/04/2018 10:00'),
+                date: toTs('10/04/2016 10:00'),
                 controller: 'angControllersController',
                 template: 'featureSetsB.html'
             },
