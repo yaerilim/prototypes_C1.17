@@ -250,7 +250,7 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'AngularJS-Controllers',
-                date: toTs('10/04/2016 10:00'),
+                date: toTs('10/04/2018 10:00'),
                 controller: 'angControllersController',
                 template: 'featureSetsB.html'
             },
