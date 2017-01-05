@@ -212,7 +212,7 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'PHP-Sessions',
-                date: toTs('5/20/2018 8:00'),
+                date: toTs('1/05/2017 12:00'),
                 controller: 'phpSessionsController',
                 template: 'featureSetsB.html'
             },
