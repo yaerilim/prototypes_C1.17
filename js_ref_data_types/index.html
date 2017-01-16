@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //Feature Set 1.0 - Student Array
+        var student_array = ['Alan', 'Bob', 'Chad', 'David', 'Eddy'];
+        console.log(student_array[2]);
+
+        //Feature Set 1.1 - Array Methods
+        console.log(student_array);
+        console.log(student_array.length);
+        student_array.push('Fred', 'Greg');
+        console.log(student_array.length);
+        console.log(student_array);
+
+        //Feature Set 2.0 - Build an object (You down with O.O.P.)
+        var student = {};
+        student.firstName = "Yaeri";
+        student.lastName = "Lim";
+        student.age = 28;
+        student.school = "Learningfuze";
+        student.questionList = [];
+        student.hasQuestion = false;
+
+        //Feature Set 2.1 - Add methods to the madness
+        student.greeting = function () {
+            return "Hello, my name is " + this.firstName;
+        };
+        student.aboutMe = function () {
+            return "My full name is " + this.firstName + " " + this.lastName + ", I am " + this.age + " years old and I am a student at " + this.school + ".";
+        };
+        student.askQuestion = function(question) {
+            this.questionList.push(question);
+            this.hasQuestion = true;
+            return "A question has been added to your list";
+        };
+        student.answerQuestion = function () {
+            if (this.hasQuestion == true) {
+                this.hasQuestion = false;
+                return this.questionList.slice(-1)[0];
+            } else {
+                return "You have no pending questions";
+            }
+        };
+
+        //Feature Set 2.2 - Test Your student
+        console.log("Greeting function: ", student.greeting());
+        console.log("About Me: ", student.aboutMe());
+        console.log("Answer Question: ", student.answerQuestion());
+        console.log("Ask Question: ", student.askQuestion("question1"));
+        console.log("Ask Question: ", student.askQuestion("question2"));
+        console.log("Ask Question: ", student.askQuestion("question3"));
+        console.log("Answer Question: ", student.answerQuestion());
+    </script>
+</head>
+<body>
+
+</body>
+</html>
