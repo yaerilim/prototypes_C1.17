@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--GET : Array ( [name] => Yaeri Lim [gender] => Female [fav_fruit] => Array ( [0] => apple [1] => peach [2] => strawberry ) ) array(0) { }-->
+<!--POST : Array ( ) array(3) { ["name"]=> string(9) "Yaeri Lim" ["gender"]=> string(6) "Female" ["fav_fruit"]=> array(3) { [0]=> string(5) "apple" [1]=> string(5) "peach" [2]=> string(10) "strawberry" } }-->
+    <form action="index.php" method="GET">
+        <input type="text" name="name" id="my_name">
+        <select name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <input type="text" name="fav_fruit[]" placeholder="favorite fruit">
+        <input type="text" name="fav_fruit[]" placeholder="favorite fruit">
+        <input type="text" name="fav_fruit[]" placeholder="favorite fruit">
+        <button>Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <!--GET : successArray
+    (
+    [value] => howdy
+    [value2] => hello
+    )
+    array(0) {
+    }
+
+    POST : successArray
+    (
+    )
+    array(2) {
+    ["value"]=>
+    string(5) "howdy"
+    ["value2"]=>
+    string(5) "hello"
+    }-->
+    <script>
+        function ajax_call() {
+            $.ajax({
+                url: 'http://localhost/prototypes_C1.17/php_superglobals/index.php',
+                method: 'GET',
+                data: {
+                    value: $('.input').val(),
+                    value2: $('.text_area').val()
+                },
+                dataType: 'text',
+                success: function(response) {
+                    console.log("success" + response)
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="checkbox" value="howdy" class="input">
+        <textarea class="text_area"></textarea>
+        <button type="button" onClick="ajax_call()">Submit</button>
+    </form>
+</body>
+</html>
