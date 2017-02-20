@@ -3,10 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>Angular Controllers</title>
-    <!-- Add the AngularJS CDN below -->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 </head>
-<body>
-
+<body ng-app="yaeri">
+    <div ng-controller="formController as fc">
+        First Name: <input type="text" ng-model="fc.form.fName"><br>
+        Last Name: <input type="text" ng-model="fc.form.lName"><br>
+        E-mail: <input type="text" ng-model="fc.form.email"><br>
+        Comments: <textarea ng-model="fc.form.comments"  ng-disabled="fc.maxLength == fc.form.comments.length"></textarea><br>
+        <br>
+        <button ng-click="fc.addForm()">Add</button>
+        <button ng-click="fc.clearForm()">Clear</button>
+        <table>
+            <tbody>
+            <tr>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Comments</th>
+            </tr>
+            <tr ng-repeat="input in fc.formArray">
+                <td>{{ input.fName + input.lName }}</td>
+                <td>{{ input.email }}</td>
+                <td>{{ input.comments }}</td>
+            </tr>
+            </tbody>
+        </table>
+        <p>Characters Remaining: {{ fc.maxLength - fc.form.comments.length }}</p>
+    </div>
+    <script>
+        var app = angular.module("yaeri", []);
+        app.controller("formController",function(){
+            this.form = {};
+            this.formArray = [];
+            this.maxLength = 25;
+            this.clearForm = function(){
+                this.form = {};
+            };
+            this.addForm = function(){
+                this.formArray.push(this.form);
+                this.clearForm();
+            };
+            this.totalCharacters = function () {
+                if(this.maxLength - this.form.comments.length <=0){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+        });
+    </script>
 </body>
 </html>
